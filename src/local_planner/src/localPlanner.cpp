@@ -496,6 +496,7 @@ int main(int argc, char** argv)
   ros::NodeHandle nh;
   ros::NodeHandle nhPrivate = ros::NodeHandle("~");
 
+  nhPrivate.getParam("searchRadius", searchRadius);
   nhPrivate.getParam("pathFolder", pathFolder);
   nhPrivate.getParam("vehicleLength", vehicleLength);
   nhPrivate.getParam("vehicleWidth", vehicleWidth);
